@@ -1,0 +1,22 @@
+<h1>Personajes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nombre</th>
+      <th>Casa</th>
+      <th>Rol</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of items; track item.id) {
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.casa }}</td>
+        <td>{{ item.rol }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

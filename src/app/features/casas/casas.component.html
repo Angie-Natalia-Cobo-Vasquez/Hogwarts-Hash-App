@@ -1,0 +1,36 @@
+<h1>Casas de Hogwarts</h1>
+
+<div class="tabla-contenedor">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Casa</th>
+        <th>Fundador</th>
+        <th>Animal</th>
+        <th>Colores</th>
+        <th>Elemento</th>
+        <th>Fantasma residente</th>
+        <th>Jefe de casa</th>
+        <th>Cualidades</th>
+        <th>Sala común</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of items; track item.id) {
+        <tr>
+          <td>{{ item.id }}</td>
+          <td>{{ item.nombre }}</td>
+          <td>{{ item.fundador }}</td>
+          <td>{{ item.animal }}</td>
+          <td>{{ item.colores }}</td>
+          <td>{{ item.elemento }}</td>
+          <td>{{ item.fantasma }}</td>
+          <td>{{ item.jefe }}</td>
+          <td>{{ item.cualidades }}</td>
+          <td>{{ item.salaComun }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

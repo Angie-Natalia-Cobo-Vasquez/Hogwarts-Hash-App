@@ -1,0 +1,22 @@
+<h1>Hechizos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Hechizo</th>
+      <th>Categoría</th>
+      <th>Efecto</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of items; track item.id) {
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.categoria }}</td>
+        <td>{{ item.efecto }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
